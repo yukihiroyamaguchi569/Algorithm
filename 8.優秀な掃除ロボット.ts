@@ -12,15 +12,16 @@ function cleaningRobot(){
     const histories =[[0,0]];
     const directions = [[1,0],[0,1],[-1,0],[0,-1]];
 
-    const makeNewHistory = array =>  
+    // const makeNewHistory = history => {
 
-    for (const history of histories){    //[0,0]
-        for (const direction of directions) {
-            const newPosition = [(history[0] + direction[0]),
-                                 (history[1] + direction[1])];  
-            console.log(newPosition);
-            
+        for (const history of histories){    //[0,0]
+            for (const direction of directions) {
+                const newPosition = [(history[0] + direction[0]),
+                                    (history[1] + direction[1])];  
+                console.log(newPosition);
+                
+            }
         }
-    }
+    // }
 }
 
